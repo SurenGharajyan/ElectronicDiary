@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_info"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/icon_info"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/icon_info"
+            android:textSize="20dp"
+            android:fontFamily="casual"
+            android:text="About Creator and Application."
+            android:textColor="#000"
+            android:id="@+id/about_creator"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/about_creator"
+            android:paddingTop="15dp"
+            android:fontFamily="cursive"
+            android:text="The application was created on July 30, 2017 by Suren Gharajyan who lives in Yerevan, Armenia.
+If you have any questions, write in the comments to this application in Google Play.
+Thank you for downloading and use this application."
+            android:textSize="20sp"
+            android:textColor="#6200ff"
+            />
+
+    </RelativeLayout>

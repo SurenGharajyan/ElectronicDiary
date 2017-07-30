@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/imageThisDay"
+    />
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        >
+    <EditText
+        android:id="@+id/edittext_about_day"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="2"/>
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_add_day_text"
+            android:text="Add Text"
+            android:textAllCaps="false"
+            android:background="@drawable/button_style_sign_in"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:text="Add Your Text"
+        android:textSize="15sp"
+        />
+</LinearLayout>

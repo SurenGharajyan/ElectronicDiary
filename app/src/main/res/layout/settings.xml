@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4"
+    android:id="@+id/setting_fragment"
+
+    >
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Settings"
+        android:textStyle="italic"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:id="@+id/textview_settings"/>
+    <RelativeLayout android:orientation="horizontal"
+        android:layout_below="@id/textview_settings"
+        android:id="@+id/relative_auto_sliding"
+        android:paddingTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/auto_sliding_images"
+        android:textSize="25dp"
+        android:id="@+id/textView_auto_sliding"
+        />
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:layout_alignBottom="@id/textView_auto_sliding"
+            />
+    <Switch android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/switch_sliding_images"
+        />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/relative_auto_sliding"
+        android:paddingTop="40dp"
+        android:id="@+id/relative_remember_account"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Remember my account"
+            android:textSize="25dp"
+            android:id="@+id/textview_remember_account"
+            />
+        <CheckBox android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/checkbox_remember_account"
+            />
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:layout_alignBottom="@id/textview_remember_account"
+            />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+        android:layout_below="@id/relative_remember_account"
+        android:paddingTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Delete Account"
+            android:id="@+id/button_delete_account"
+            android:textAllCaps="false"
+            android:textSize="35dp"
+
+            />
+        </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>
